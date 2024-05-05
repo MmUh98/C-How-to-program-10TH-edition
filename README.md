@@ -1,4 +1,6 @@
 Chapter 4 Algorithm Development and Control Statements
+
+
 4.37 (Enforcing Privacy with Cryptography) The explosive growth of Internet communications
 and data storage on Internet-connected computers has greatly increased privacy concerns. The field
 of cryptography is concerned with coding data to make it difficult (and hopefully—with the most
