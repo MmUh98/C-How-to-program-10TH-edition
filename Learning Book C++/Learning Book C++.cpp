@@ -39,6 +39,29 @@ int main()
 	digit2 = digit4;
 	digit4 = temp;
 	cout << "Encrypted number: " << digit1 << digit2 << digit3 << digit4 << endl;
+
+	//Decrypting the number
+	int decrypt;
+	int d1, d2, d3, d4;
+	int temp1;
+	cout << "Enter the encrypted number: ";
+	cin >> decrypt;
+	d1 = decrypt / 1000;
+	d2 = (decrypt % 1000) / 100;
+	d3 = (decrypt % 100) / 10;
+	d4 = decrypt % 10;
+	d1 = (d1 + 3) % 10;
+	d2 = (d2 + 3) % 10;
+	d3 = (d3 + 3) % 10;
+	d4 = (d4 + 3) % 10;
+	temp1 = d1;
+	d1 = d3;
+	d3 = temp1;
+	temp1 = d2;
+	d2 = d4;
+	d4 = temp1;
+	cout << "Decrypted number: " << d1 << d2 << d3 << d4 << endl;
+
 	return 0;
 		
 
